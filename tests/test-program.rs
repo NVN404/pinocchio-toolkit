@@ -1,4 +1,3 @@
-//! Simple test program that uses pinocchio-utils
 
 #![no_main]
 use pinocchio::{account_info::AccountInfo, entrypoint, msg, pubkey::Pubkey, ProgramResult};
