@@ -118,7 +118,7 @@ pub fn process_instruction(
     let seeds = [b"test".as_ref()];
     
     // One line to create PDA! 
-    pinocchio_utils::create_pda_account::<2>(payer, pda, program_id, 100, &seeds, bump)?;
+    pinocchio_toolkit::create_pda_account::<2>(payer, pda, program_id, 100, &seeds, bump)?;
     
     Ok(())
 }
