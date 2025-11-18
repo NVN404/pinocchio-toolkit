@@ -45,7 +45,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pinocchio-utils"
+name = "pinocchio-toolkit"
 version = "0.1.0"
 dependencies = [
  "pinocchio",
@@ -65,5 +65,5 @@ version = "0.1.0"
 dependencies = [
  "pinocchio",
  "pinocchio-pubkey",
- "pinocchio-utils",
+ "pinocchio-toolkit",
 ]

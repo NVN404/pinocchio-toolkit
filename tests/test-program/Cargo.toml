@@ -10,7 +10,7 @@ path = "../test-program.rs"
 [dependencies]
 pinocchio = "0.9"
 pinocchio-pubkey = "0.3"
-pinocchio-utils = { path = "../.." }
+pinocchio-toolkit = { path = "../.." }
 
 [profile.release]
 overflow-checks = true

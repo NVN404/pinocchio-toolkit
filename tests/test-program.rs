@@ -1,9 +1,7 @@
 //! Simple test program that uses pinocchio-utils
 
 #![no_main]
-use pinocchio::{
-    account_info::AccountInfo, entrypoint, msg, pubkey::Pubkey, ProgramResult,
-};
+use pinocchio::{account_info::AccountInfo, entrypoint, msg, pubkey::Pubkey, ProgramResult};
 
 entrypoint!(process_instruction);
 
@@ -12,7 +10,7 @@ pub fn process_instruction(
     accounts: &[AccountInfo],
     data: &[u8],
 ) -> ProgramResult {
-    msg!("Creating PDA with pinocchio-utils");
+    msg!("Creating PDA with pinocchio-toolkit");
 
     let payer = &accounts[0];
     let pda = &accounts[1];
@@ -24,7 +22,7 @@ pub fn process_instruction(
     let seeds = [b"test".as_ref()];
 
     // Call our utility! N=2 because we have 1 seed + 1 bump
-    pinocchio_utils::create_pda_account::<2>(payer, pda, program_id, 100, &seeds, bump)?;
+    pinocchio_toolkit::create_pda_account::<2>(payer, pda, program_id, 100, &seeds, bump)?;
 
     msg!("SUCCESS!");
     Ok(())

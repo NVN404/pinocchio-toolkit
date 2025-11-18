@@ -1,11 +1,11 @@
 [package]
-name = "pinocchio-utils"
+name = "pinocchio-toolkit"
 version = "0.1.0"
 edition = "2021"
 description = "Zero-boilerplate helpers for Pinocchio Solana programs (PDA creation, CPI, etc.)"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/NVN404/pinocchio-util"
-documentation = "https://docs.rs/pinocchio-utils"
+documentation = "https://docs.rs/pinocchio-toolkit"
 homepage = "https://github.com/NVN404/pinocchio-util"
 keywords = ["solana", "pinocchio", "pda", "cpi", "no-std"]
 categories = ["no-std", "cryptography::cryptocurrencies"]

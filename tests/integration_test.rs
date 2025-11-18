@@ -1,4 +1,4 @@
-// REAL INTEGRATION TEST - Actually testing create_pda_account with litesvm!
+// REAL INTEGRATION TEST - ctually testing create_pda_account with litesvm!
 
 use litesvm::LiteSVM;
 use solana_sdk::{

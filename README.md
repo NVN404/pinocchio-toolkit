@@ -1,8 +1,8 @@
-# pinocchio-utils
+# pinocchio-toolkit
 
-[![Crates.io](https://img.shields.io/crates/v/pinocchio-utils.svg)](https://crates.io/crates/pinocchio-utils)
-[![Docs.rs](https://docs.rs/pinocchio-utils/badge.svg)](https://docs.rs/pinocchio-utils)
-[![License](https://img.shields.io/crates/l/pinocchio-utils.svg)](https://github.com/NVN404/pinocchio-util#license)
+[![Crates.io](https://img.shields.io/crates/v/pinocchio-toolkit.svg)](https://crates.io/crates/pinocchio-toolkit)
+[![Docs.rs](https://docs.rs/pinocchio-toolkit/badge.svg)](https://docs.rs/pinocchio-toolkit)
+[![License](https://img.shields.io/crates/l/pinocchio-toolkit.svg)](https://github.com/NVN404/pinocchio-util#license)
 
 > **Zero-boilerplate helpers for Pinocchio Solana programs**
 
@@ -13,7 +13,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-pinocchio-utils = "0.1.0"
+pinocchio-toolkit = "0.1.0"
 pinocchio = "0.9"
 pinocchio-pubkey = "0.3"
 ```
@@ -62,7 +62,7 @@ Without `pinocchio-util`:
 // - Call invoke_signed with correct types
 ```
 
-With `pinocchio-utils`:
+With `pinocchio-toolkit`:
 ```rust
 // One line:
 create_pda_account::<2>(payer, pda, program_id, space, &seeds, bump)?;
@@ -99,7 +99,7 @@ create_pda_account::<2>(payer, pda, program_id, space, &seeds, bump)?;
 
 ### Real Working Program
 
-See [`tests/test-program.rs`](tests/test-program.rs) for a complete example Solana program that uses `pinocchio-utils`:
+See [`tests/test-program.rs`](tests/test-program.rs) for a complete example Solana program that uses `pinocchio-toolkit`:
 
 ```rust
 use pinocchio::{account_info::AccountInfo, entrypoint, pubkey::Pubkey, ProgramResult};
